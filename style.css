@@ -94,7 +94,49 @@
 .plant-box {
   text-align: center;
 }
+/* --- CARD --- */
 
+.plant-box2{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 30px;
+justify-content: center;
+
+}
+
+.plant-card img{
+width: 100%;
+}
+
+
+.plant-card p{
+font-family: "Inter", sans-serif;
+color:rgba(17, 17, 17, 1);
+font-size:1.3rem;
+font-weight: 600;
+margin-top: 30px;
+}
+
+.plant-card h2{
+font-family: "Inter", sans-serif;
+color:rgba(17, 17, 17, 1);
+font-size:1.3rem;
+font-weight:bold;
+margin-top: 20px;
+}
+
+
+
+.plant-card button{
+width: 100%;
+font-family: "Inter", sans-serif;
+color:white;
+font-size:1rem;
+border:none;
+padding: 19px 75px;
+background-color: rgba(233, 90, 8, 1);
+margin-top: 30px;
+}
 
 
 
@@ -124,6 +166,10 @@
     width: 100%;
   }
   /* ----- Our Plants ----- */
+
+  .plants{
+    max-width: 96%;
+  }
   .plant-box h1{
     font-size: 1.5rem;
   }
@@ -133,6 +179,10 @@
   .plant-box br{
     display: none;
   }
+  /* ---- CARD ---- */
 
+  .plant-box2{
+    grid-template-columns: repeat(2, 1fr);
+  }
 
 }
