@@ -171,71 +171,135 @@
 }
 
 /* ------ Join the colorful Bunch ----- */
-.join-us{
+.join-us {
   text-align: center;
   background-image: url(./assets/news-letter-bg.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size:cover ;
+  background-size: cover;
   padding-bottom: 199px;
   margin-bottom: 50px;
   margin-top: 120px;
 }
-.join-us h1{
-color: white;
-font-size:3rem;
-padding-top: 199px;
-margin-bottom: 10px;
-
+.join-us h1 {
+  color: white;
+  font-size: 3rem;
+  padding-top: 199px;
+  margin-bottom: 10px;
 }
 
-#email-btn{
+#email-btn {
   width: 50%;
   padding: 15px 20px;
   border: none;
 }
-#Subscribe-btn{
+#Subscribe-btn {
   color: white;
   background-color: rgba(233, 90, 8, 1);
   border: none;
   padding: 16px 24px;
 }
 
-.join-us form{
+.join-us form {
   display: flex;
-  gap:0px;
+  gap: 0px;
   justify-content: center;
 }
 
+/* ----- Latest  Deals ----- */
+.latest {
+  text-align: center;
+  margin-top: 130px;
+  margin: 160px;
+}
+.latest h1 {
+  font-size: 3rem;
+}
+.latest h1 span {
+  color: rgba(233, 90, 8, 1);
+}
+.latest p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 16px;
+}
 
+.discount-main {
+  color: white;
+  text-align: center;
+}
 
+.underline {
+  text-decoration: underline;
+}
 
+.discount h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 1);
+}
+.discount span {
+  color: rgba(233, 90, 8, 1);
+}
+.discount {
+  text-align: center;
+  margin: 133px 0;
+}
+.discount-main {
+  padding: 65px 49px;
+}
 
+.flower-discount-box {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
 
+.discount-box1 {
+  background-image: url(./assets/deal-bloom.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+.discount-box2 {
+  background-image: url(./assets/deal-ana.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.discount-box3 {
+  background-image: url(./assets/deal-zabo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 241px;
+  border-radius: 10px;
+}
 
-
-
-
-
-
+.discount-container {
+  display: flex;
+  gap: 25px;
+}
 
 /* ----- Footer ---- */
-.footer-container{
+.footer-container {
   display: flex;
   gap: 30px;
-  justify-content:space-around;
+  justify-content: space-around;
   max-width: 85%;
-
 }
 
-.footer-link ul{
-display: grid;
-grid-template-columns: repeat(2,1fr);
-gap: 30px;
+.footer-link ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 
-
-.footer-logo p{
+.footer-logo p {
   font-family: "Inter", sans-serif;
   font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.5);
@@ -243,37 +307,16 @@ gap: 30px;
   margin-top: 16px;
 }
 
-.footer-link ul li{
-font-family: "Inter", sans-serif;
+.footer-link ul li {
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.5);
   list-style: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-icon img {
+  margin-right: 20px;
+}
 
 /* --- Mobile Responsive --- */
 
@@ -336,17 +379,35 @@ font-family: "Inter", sans-serif;
   }
 
   /* ----- Join the colorful Bunch ----- */
-  .join-us h1{
+  .join-us h1 {
     font-size: 2.5rem;
   }
 
-  /* ------ Footer ------- */
-  .footer-container{
-  flex-direction: column;
-  margin: 30px;
+  /* --- Latest Deals --- */
+  .discount-container {
+    flex-direction: column;
+    padding: 10px;
   }
-.footer-link ul{
-  grid-template-columns:repeat(1,1fr);
-  gap:50px;
-}
+  .discount-box1,
+  .discount-box2,
+  .discount-box3 {
+    padding: 60px 49px;
+    width: 100%;
+  }
+  .latest h1 {
+    font-size: 2.5rem;
+  }
+  .latest p br {
+    display: none;
+  }
+
+  /* ------ Footer ------- */
+  .footer-container {
+    flex-direction: column;
+    margin: 30px;
+  }
+  .footer-link ul {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
 }
